@@ -1,7 +1,9 @@
 body {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  color: #333;
+  color: var(--main-blue);
   background-color: #ffffff;
+  width: 900px;
+  
 }
 
 img{
@@ -11,4 +13,9 @@ img{
 
 *{
   box-sizing: border-box;
+}
+
+.top-push{
+  height: 73px;
+  width: 100%;
 }

@@ -1,0 +1,36 @@
+.intro{
+  display: grid;
+  grid-template-columns: 248px 539px;
+  /* grid-template-row: repeat(3, auto); */
+  grid-gap: 31px 41px;
+
+  &__title{
+    grid-column: 1 / span 1;
+    font-size: 2.25rem;
+    line-height: 0.89;
+    font-weight: normal;
+    margin: 0;
+  }
+  &__content{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+  }
+  &__image{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    height: 303px;
+    width: 539px;
+  }
+  &__caption{
+    grid-column: 2 / span 1;
+    font-size: 1.125rem;
+
+    & p{ 
+      font-size: 0.75rem;
+      padding-right: 5px;
+    }
+  }
+}

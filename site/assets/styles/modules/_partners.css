@@ -1,0 +1,39 @@
+.partners{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4,auto);
+  grid-gap: 37px;
+  grid-template-areas: "title image image"
+    "content image image"
+    "content caption numbers"
+    "button caption numbers";
+
+  &__title{
+    grid-area: title;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin:0;
+  }
+
+  &__image{
+    grid-area: image;
+  }
+
+  &__content{
+    grid-area: content;
+    line-height: 1.5;
+  }
+
+  &__caption{
+    grid-area: caption;
+    font-size: 1.125rem;
+
+    & p {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__number{
+    grid-area: numbers;
+  }
+}

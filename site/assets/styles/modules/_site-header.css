@@ -1,0 +1,27 @@
+.site-header{
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 900px;
+  background: var(--main-blue);
+  color: white;
+  padding: 0;
+  
+
+  &__logo{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 14px 0;
+  }
+
+  &__first-row{
+    display: block;
+  }
+
+  &__second-row{
+    top: 30px;
+    border-top: 1px solid grey;
+  }
+}

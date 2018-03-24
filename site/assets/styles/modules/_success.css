@@ -1,0 +1,17 @@
+.success{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 38px;
+
+  &__title{
+    grid-column: 1 / -1;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__btn{
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}

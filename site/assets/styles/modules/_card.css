@@ -1,0 +1,21 @@
+.card{
+  &__headline{
+    font-size: 5.625rem;
+    text-align: center;
+    letter-spacing: -5px;
+
+    &--percent{
+      font-size: 3.125rem;
+      vertical-align: super;
+    }
+  }
+
+  &__content{
+    font-size: 0.875rem;
+    line-height: 1.57;
+  }
+
+  &__divider {
+    border: 0.5px solid #d8d8d8;
+  }
+}

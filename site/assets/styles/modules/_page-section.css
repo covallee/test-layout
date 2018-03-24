@@ -1,0 +1,11 @@
+.page-section{
+  padding: 4.375rem 0;
+
+  &--main-blue{
+    background: var(--main-blue);
+  }
+
+  &--alt-blue{
+    background: var(--alt-blue);
+  }
+}
