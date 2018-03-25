@@ -22,6 +22,6 @@ img{
   width: 100%;
   height: 50px;
   @mixin atDesktop{
-    height: 73px;
+    height: 80px;
   }
 }
