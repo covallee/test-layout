@@ -7,7 +7,6 @@
     grid-template-columns: 248px 539px;
     grid-gap: 31px 41px;
   }
-  /* grid-template-row: repeat(3, auto); */
 
   &__title{
     grid-column: 1 / span 1;

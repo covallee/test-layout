@@ -38,7 +38,6 @@
 
   &--selected{
     background-position: left bottom;
-    /* background: var(--highlight-yellow);  */
     border-color: var(--highlight-yellow); 
   }
 
@@ -70,23 +69,4 @@
     background-position: left bottom;
     color: var(--main-blue);
   }
-
- 
-  /* &--yellow-selected{
-    color: var(--main-blue);
-    background:var(--highlight-yellow);
-    border-color:var(--highlight-yellow);
-  }
-
-  &--blue-selected{
-    color: var(--main-blue);
-    background:var(--highlight-blue);
-    border-color:var(--highlight-blue);
-  }
-
-  &--orange-selected{
-    color: var(--main-blue);
-    background:var(--highlight-orange);
-    border-color:var(--highlight-orange);
-  } */
 }

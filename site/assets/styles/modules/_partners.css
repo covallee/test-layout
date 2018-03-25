@@ -68,7 +68,6 @@
   &__numbers{
     grid-area: numbers;
     font-size: 0.75rem;
-    /* line-height: 1.33; */
 
     ul{
       display: inline-block;

@@ -1,6 +1,5 @@
 .slider{
   position: relative;
-
   z-index: 3;
 
   &__container{
@@ -22,7 +21,6 @@
     display: grid;
     grid-template-columns: repeat(6, 100%);
     position: relative;
-    
     left: -240px;
 
     @mixin atDesktop{

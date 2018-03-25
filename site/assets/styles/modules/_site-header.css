@@ -29,7 +29,6 @@
   }
 
   &__second-row{
-    /* display: block; */
     left: 0;
     border-top: 1px solid grey;
     height: 50px;
@@ -111,6 +110,4 @@
       transform: scaleX(0);
     }
   }
-
-
 }
