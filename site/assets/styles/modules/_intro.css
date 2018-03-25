@@ -24,13 +24,26 @@
     height: 303px;
     width: 539px;
   }
+
+  &__svg{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.8;
+  }
   &__caption{
     grid-column: 2 / span 1;
     font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2;
+    margin-top: -24px;
 
     & p{ 
       font-size: 0.75rem;
       padding-right: 5px;
+      line-height: 1.33;
+      margin: 0;
     }
   }
 }

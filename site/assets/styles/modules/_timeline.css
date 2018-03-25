@@ -23,8 +23,8 @@
 
   &__divider{
     display: inline-block;
-    width: 100px;
-    margin: 0;
+    width: 95px;
+    margin: 5px -5px;
   }
 
   &__grid{
@@ -37,6 +37,7 @@
     "text1 text3 table-btn"
     "text1 text3 table"
     "text2 text4 table";
+    margin-top: 44px;
 
     &__title{
       grid-area: title;
@@ -45,18 +46,28 @@
       font-size: 1.5rem;
     }
 
-    &__text1{
-      grid-area: text1;
+    &__text{
+      font-size: 1rem;
+      color: var(--alt-text);
+      line-height: 1.5;
+      
+
+      &--area1{
+        grid-area: text1;
+      }
+      &--area2{
+        grid-area: text2;
+      }
+      &--area3{
+        grid-area: text3;
+      }
+      &--area4{
+        grid-area: text4;
+        font-size: 0.875rem;
+        line-height: 1.57;
+      }
     }
-    &__text2{
-      grid-area: text2;
-    }
-    &__text3{
-      grid-area: text3;
-    }
-    &__text4{
-      grid-area: text4;
-    }
+
     &__btn{
       grid-area: table-btn;
     }

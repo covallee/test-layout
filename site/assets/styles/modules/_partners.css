@@ -17,23 +17,52 @@
 
   &__image{
     grid-area: image;
+    width: 534px;
+    height: 303px;
   }
 
   &__content{
+    font-size: 1rem;
     grid-area: content;
     line-height: 1.5;
+    margin: 0;
   }
 
   &__caption{
     grid-area: caption;
     font-size: 1.125rem;
+    line-height: 2;
+    margin-top: -29px;
 
     & p {
       font-size: 0.75rem;
+      margin: 0;
+      line-height: 1.33;
     }
   }
 
-  &__number{
+  &__numbers{
     grid-area: numbers;
+    font-size: 0.75rem;
+    /* line-height: 1.33; */
+
+    ul{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      list-style: none;
+      padding: 5px 0;
+
+      span{
+        font-weight:600;
+      }
+    }
+  }
+
+  &__btn{
+    grid-area: button;
+    margin-top: -40px;
   }
 }

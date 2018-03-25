@@ -1,0 +1,14 @@
+.slider{
+
+  &__container{
+    overflow: hidden;
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(6, 100%);
+    position: relative;
+    left: -820px;
+    transition: all 1s;
+  }
+}
