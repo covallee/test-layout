@@ -1,14 +1,39 @@
 .timeline{
   color: white;
 
+  &__main-grid{
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    grid-gap: 10px 0;
+    @mixin atDesktop{
+      grid-template-columns: 0.66fr repeat(4,1fr) 0.66fr;
+      grid-gap: 0;
+    }
+    
+  }
+
+  &--centered{
+    justify-self: center;
+  }
+
+  &--end{
+    justify-self: end;
+  }
+
   &__title{
-    font-size: 2.25rem;
+    grid-column: 1 /-1;
+    font-size: 1.875rem;
     font-weight: 400;
     color: white;
     margin-top: 0;
+
+    @mixin atDesktop{
+      font-size: 2.25rem;
+    }
   }
 
   &__selection{
+    grid-column: 1/-1;
     ul {
       margin: 0;
       padding: 0;
@@ -16,28 +41,55 @@
   
     li{
       list-style: none;
-      display: inline-block;
-      padding-right: 7px;
+
+      @mixin atDesktop{
+        display: inline-block;
+        padding-right: 7px;
+      }
     }
   }
 
   &__divider{
-    display: inline-block;
-    width: 95px;
-    margin: 5px -5px;
+    grid-row: 2/ 9;
+    grid-column: 1 / 2;
+    width: 1px;
+    height: 100%;
+    margin: 0 0 0 25px;
+
+    @mixin atDesktop{
+      grid-row: 2/ 3;
+      grid-column: 1 / -1;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      margin: 14px 0;
+    }
   }
 
   &__grid{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5,auto);
-    grid-gap: 17px 42px;
-    grid-template-areas: "title empty empty"
-    "text1 text3 table-title"
-    "text1 text3 table-btn"
-    "text1 text3 table"
-    "text2 text4 table";
-    margin-top: 44px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title"
+    "text1"
+    "text2"
+    "text3"
+    "text4"
+    "table-title"
+    "table-btn"
+    "table";
+    grid-gap: 17px;
+
+    @mixin atDesktop{
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(5,auto);
+      grid-gap: 17px 42px;
+      grid-template-areas: "title empty empty"
+      "text1 text3 table-title"
+      "text1 text3 table-btn"
+      "text1 text3 table"
+      "text2 text4 table";
+      margin-top: 44px;
+    }
 
     &__title{
       grid-area: title;
@@ -79,4 +131,48 @@
     }
   }
   
+}
+
+#btn-1998{
+  @mixin atDesktop{
+    grid-column: 1 / span 1;
+    grid-row: 2 / 3;
+    justify-self: start;
+  }
+}
+
+#btn-2002{
+  @mixin atDesktop{
+    grid-column: 2 / span 1;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
+#btn-2006{
+  @mixin atDesktop{
+  grid-column: 3 / span 1;
+  grid-row: 2 / 3;
+  justify-self: center;
+  }
+}
+#btn-2012{
+  @mixin atDesktop{
+  grid-column: 4 / span 1;
+  grid-row: 2 / 3;
+  justify-self: center;
+  }
+}
+#btn-2014{
+  @mixin atDesktop{
+  grid-column: 5 / span 1;
+  grid-row: 2 / 3;
+  justify-self: center;
+  }
+}
+#btn-2018{
+  @mixin atDesktop{
+  grid-column: 6 / span 1;
+  grid-row: 2 / 3;
+  justify-self: end;
+  }
 }

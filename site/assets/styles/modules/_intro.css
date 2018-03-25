@@ -1,43 +1,72 @@
 .intro{
   display: grid;
-  grid-template-columns: 248px 539px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 10px;
+  @mixin atDesktop{
+    grid-template-columns: 248px 539px;
+    grid-gap: 31px 41px;
+  }
   /* grid-template-row: repeat(3, auto); */
-  grid-gap: 31px 41px;
 
   &__title{
     grid-column: 1 / span 1;
-    font-size: 2.25rem;
-    line-height: 0.89;
-    font-weight: normal;
-    margin: 0;
+    font-size: 1.875rem;
+    line-height: 1.07;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    width: 150px;
+    @mixin atDesktop{
+      font-size: 2.25rem;
+      margin: 0;
+      line-height: 0.89;
+    }
   }
   &__content{
     grid-column: 1 / span 1;
-    grid-row: 2 / span 2;
     line-height: 1.5;
     font-size: 1rem;
     margin: 0;
+
+    @mixin atDesktop{
+      grid-row: 2 / span 2;
+    }
   }
   &__image{
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-    height: 303px;
-    width: 539px;
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    @mixin atDesktop{
+      height: 303px;
+      width: 539px;
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 2;
+    }
   }
 
   &__svg{
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
     justify-self: center;
     align-self: center;
     opacity: 0.8;
+
+    @mixin atDesktop{
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 2;
+    }
   }
+
   &__caption{
-    grid-column: 2 / span 1;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 2;
-    margin-top: -24px;
+    
+
+    @mixin atDesktop{
+      grid-column: 2 / span 1;
+      margin-top: -24px;
+    }
 
     & p{ 
       font-size: 0.75rem;

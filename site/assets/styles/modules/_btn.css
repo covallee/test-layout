@@ -1,4 +1,5 @@
 .btn{
+  position: relative;
   background-color: transparent;
   color: var(--main-blue);
   text-decoration: none;
@@ -6,14 +7,16 @@
   border: 1px solid var(--main-blue);
   text-transform: uppercase;
   font-size: 0.875rem;
-  padding: 20px;
+  padding: 20px 25px;
   transition: all 0.5s ease-in;
+  
 
   &--no-bottom{
     border-bottom: 0;
   }
 
   &--small{
+    width: 54px;
     padding: 6px 10px;
   }
   &--smaller{
@@ -25,6 +28,7 @@
     background: linear-gradient(to right, var(--highlight-yellow) 50%, var(--main-blue) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
+    z-index: 3;
   }
 
   &--white{
@@ -66,6 +70,8 @@
     background-position: left bottom;
     color: var(--main-blue);
   }
+
+ 
   /* &--yellow-selected{
     color: var(--main-blue);
     background:var(--highlight-yellow);

@@ -2,8 +2,11 @@ body {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   color: var(--main-blue);
   background-color: #ffffff;
-  width: 900px;
-  
+  width: 320px;
+  margin: 0;
+  @mixin atDesktop{
+    width: 900px;
+  }
 }
 
 img{
@@ -16,6 +19,9 @@ img{
 }
 
 .top-push{
-  height: 73px;
   width: 100%;
+  height: 50px;
+  @mixin atDesktop{
+    height: 73px;
+  }
 }

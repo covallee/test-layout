@@ -6,14 +6,28 @@
 
   ul {
     margin: 0;
-    padding: 0;
-    /* @mixin clearfix; */
+    padding: 20px;
+    background: var(--main-blue);
+    width: 200px;
+    margin: 49px -40px 0 0;
+    text-align: right;
+
+    @mixin atDesktop{
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      width: 100%;
+      text-align: left;
+    }
   }
 
   li{
     list-style: none;
-    display: inline-block;
-    padding-right: 20px;
+
+    @mixin atDesktop{
+      display: inline-block;
+      padding-right: 20px;
+    }
   }
 
   li:last-child{
@@ -32,7 +46,6 @@
     &.is-selected{
       opacity: 0.6;
     }
-    /* background-color: transparent; */
   }
 
   &--top{

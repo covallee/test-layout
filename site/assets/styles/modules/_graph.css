@@ -1,6 +1,6 @@
 .graph{
   display: grid;
-  grid-template-columns: 0 repeat(6,1fr);
+  grid-template-columns: 0.5fr repeat(6,1fr);
   grid-template-rows: repeat(60, 1fr) 0;
   grid-column-gap: 0px;
   justify-items: center;
@@ -52,13 +52,13 @@
     grid-row: 1 / 1;
     font-weight: bold;
     font-size: 0.6875rem;
-    margin-right: 30px;
+    margin-right: 5px;
   }
 
   &__vAxis-values{
     grid-column: 1 /span 1;
     grid-row: calc(61 - (var(--value) - 20));
-    margin-right: 30px;
+    margin-right: 5px;
     font-size: 0.6875rem;
   }
 
