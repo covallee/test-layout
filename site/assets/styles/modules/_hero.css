@@ -1,8 +1,8 @@
-.hero{
+.hero {
   background: var(--alt-blue);
   padding-bottom: 35px;
 
-  &__title{
+  &__title {
     width: 100%;
     font-size: 3.125rem;
     color: var(--main-blue);
@@ -10,26 +10,27 @@
     line-height: 1.1;
     margin: 16px 0 50px 0;
 
-    @mixin atDesktop{
+    @mixin atDesktop {
       width: 534px;
       font-size: 5rem;
       line-height: 1;
       margin: 32px 0 50px 0;
     }
   }
+  
 
-  &__divider{
+  &__divider {
     width: 100%;
     float: left;
     margin-top: 0;
     margin-bottom: 9px;
 
-    @mixin atDesktop{
+    @mixin atDesktop {
       width: 534px;
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     width: 100%;
     font-family: Times-Roman;
     font-weight: normal;
@@ -37,16 +38,16 @@
     font-size: 1.875rem;
     line-height: 1.2;
 
-    @mixin atDesktop{
+    @mixin atDesktop {
       width: 390px;
       font-size: 2.25rem;
       line-height: 1;
     }
   }
 
-  &__image{
+  &__image {
 
-    @mixin atDesktop{
+    @mixin atDesktop {
       width: 100%;
       height: 202px;
       object-fit: cover;

@@ -1,4 +1,4 @@
-.graph{
+.graph {
   display: grid;
   grid-template-columns: 0.5fr repeat(6,1fr);
   grid-template-rows: repeat(60, 1fr) 0;
@@ -31,14 +31,14 @@
     transition: all 0.08s ease-out;
   }
 
-  &__vAxis{
+  &__vAxis {
     grid-column: 1 /span 1;
     grid-row: 2 / 62;
     border-right: 1px solid #f4e8d6;
     justify-self: end;
   }
 
-  &__vAxis-unit{
+  &__vAxis-unit {
     grid-column: 1 /span 1;
     grid-row: 1 / 1;
     font-weight: bold;
@@ -46,7 +46,7 @@
     margin-right: 5px;
   }
 
-  &__vAxis-values{
+  &__vAxis-values {
     grid-column: 1 /span 1;
     grid-row: calc(61 - (var(--value) - 20));
     margin-right: 5px;

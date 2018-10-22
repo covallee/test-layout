@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "at-rule-empty-line-before": "always",
+    "block-no-empty": true,
+    "string-no-newline": true,
+    "no-extra-semicolons": true,
+    "block-opening-brace-space-before": "always"
+  }
+}
